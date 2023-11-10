@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="log_in">Log in</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="i_don_t_have_an_account">I don\'t have an account.</string>
+    <string name="sign_up">Sign up</string>
+    <string name="register">Register</string>
+    <string name="already_have_account">Already have account</string>
+    <string name="username">Username</string>
+    <string name="please_try_again">Please try again!</string>
+    <string name="account_created_successfully">Account Created Successfully.</string>
+    <string name="created_user_success">Created user success</string>
+    <string name="password_doesn_t_match">Password doesn\'t match!</string>
+    <string name="please_enter_the_fields">Please enter the fields</string>
+    <string name="please_enter_email_and_password">Please enter email and password</string>
+    <string name="user_sign_in_successfully">User sign in successfully</string>
+    <string name="inValidAccount">User not exist , Should be register</string>
+    <string name="demo_name">John Doe</string>
+    <string name="type_your_message_here">Type your message here</string>
+    <string name="online">Online</string>
+</resources>

@@ -1,0 +1,47 @@
+<!-- custom_action_bar.xml -->
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/middle_blue"
+    android:id="@+id/toolbar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userNameFriend_ab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/friendim"
+            app:civ_border_width="3dp"
+            app:civ_border_color="#00d4ff"
+            android:layout_alignParentStart="true"/>
+        <TextView
+            android:id="@+id/userNameFriend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/demo_name"
+            android:fontFamily="@font/cairo"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_toEndOf="@id/userNameFriend_ab"
+            android:layout_marginStart="16dp"/>
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/online"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_below="@id/userNameFriend_tv"
+            android:layout_toEndOf="@id/userNameFriend_ab"
+            android:layout_marginStart="16dp"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>

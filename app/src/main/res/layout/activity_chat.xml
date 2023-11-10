@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_image_v1"
+    tools:context=".ui.Chat">
+
+    <include
+        android:id="@+id/chat_appbar"
+        layout="@layout/custom_action_bar"
+
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_chat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_above="@id/linearMessage_layout"
+        android:layout_below="@+id/chat_appbar"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/friend_message_layout" />
+    <LinearLayout
+        android:id="@+id/linearMessage_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="8dp"
+        android:elevation="8dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/messageEditText"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:hint="@string/type_your_message_here"
+            android:inputType="text"
+            android:maxLines="5"
+            android:fontFamily="@font/ararbic"
+            android:textColor="@color/black"
+            android:textColorHint="@color/black"
+            android:background="@drawable/message_bacground"
+            android:layout_marginStart="8dp"
+            android:padding="@dimen/_12dp"/>
+
+        <ImageButton
+            android:id="@+id/sendButtonMessage"
+            android:layout_width="@dimen/_50dp"
+            android:layout_height="@dimen/_50dp"
+            android:src="@drawable/btn_message"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginStart="8dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

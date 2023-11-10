@@ -1,0 +1,35 @@
+<!-- custom_action_bar.xml -->
+<androidx.appcompat.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/middle_blue"
+    android:id="@+id/toolbar_home">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/userNameFriend_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Friends"
+            android:fontFamily="@font/cairo"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+          />
+        <TextView
+            android:id="@+id/friends_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="100000"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:paddingStart="16dp"
+            android:layout_toEndOf="@id/userNameFriend_tv"
+            />
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>
